@@ -1,0 +1,146 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:gray;  
+}  
+.container {  
+ 
+  padding: 80px;
+  background-color: lightblue;  
+}  
+.gender{
+  width: 97%;  
+  padding: 10px 10px 10px;  
+  margin: 5px 1px 9px ;    
+  border: none;  
+  background: #f1f1f1;  
+}
+input[type=text], textarea {  
+  width: 95%;  
+  padding: 15px;  
+  margin: 5px 0 20px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+div {  
+       padding: 10px 0;  
+    }  
+
+hr {  
+  border: 1px solid #f1f1f1;  
+  width: 94%;
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 200px;  
+  margin: 0px 4px 10px 4px ;  
+  border: none;  
+  cursor: pointer;  
+  width: 25%;  
+  opacity: 0.9;  
+  display: inline-block;
+  text-align: center;
+}  
+.registerbtn:hover {  
+  opacity: 6;  
+  background-color: white;
+  color: #4CAF50;
+}  
+.stdpen{
+  width: 15%;
+  margin: 3px 1px 12px;
+}
+</style> 
+<script src="index.js"></script> 
+</head>  
+<body>  
+  <form name="reg_form" action="" onsubmit="validate()" method="">  
+  <div class="container">  
+  <center>  <h1> Student Registeration Form</h1> </center>  
+  <hr>  
+<!--------------------Name--------------------------->
+<label> Firstname:* </label>   <br>
+<input type="text" name="fname" placeholder= "Firstname" size="15" /> <br>   
+<label> Middlename:</label><br>
+<input type="text" name="mname" placeholder="Middlename" size="15" /> <br>   
+<label> Lastname:*</label> <br>    
+<input type="text" name="lname" placeholder="Lastname" size="15" /> 
+
+
+<!------------------Date Of Birth--------------------------->
+<p>
+    Date Of Birth : *
+    <input type="date" name="exp-date" id="exp_date" >
+
+</p> 
+
+<!--------------------Course---------------------------> 
+<div>  
+<label>   
+Course : * 
+</label>   
+<select name="course" id="course">  
+<option value="select">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select>  
+</div>  
+
+<!-------------------Student Pen number --------------------------->
+<div>
+<label>
+Student Pen no: *
+</label>
+<p class="stdpen">
+<input  type="text" name="Stdpen">
+</p>
+</div>
+<!--------------------Gender--------------------------->
+<div>  
+    <fieldset>
+        <legend>Gender : * </legend>
+        <p class="gender">
+            Male * <input type="radio" name="gender" id="g" value="male">
+            FeMale * <input type="radio" name="gender" id="g" value="female" >
+            Other * <input type="radio" name="gender" id="g" value="other">
+    
+        </p>
+    </fieldset>
+</div>  
+
+<!--------------------Phone--------------------------->
+<label>   
+Phone :*  
+</label> <br>    
+<input type="text" name="phone" size="8" placeholder="Enter 10 digit number "/> <br> <br>  
+
+<!--------------------Address--------------------------->  
+<label>Address : *</label><br>  
+<textarea cols="25" rows="4" name="address" placeholder="Current Address" value="address" >  
+</textarea>  <br>
+
+<!---------------------Email----------------------------->
+<div>
+<label for="email">Email: *</label><br>  
+<input type="text" placeholder="Enter Email" name="email" >  
+</div>  
+<!--------------------Register--------------------------->
+<center>
+<input type="submit"  name="submit" value="submit" class="registerbtn">  
+
+<input type="reset" name="reset" value="reset" class="registerbtn">
+</center>
+</form>  
+</body>  
+</html>  
