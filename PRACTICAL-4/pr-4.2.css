@@ -1,0 +1,36 @@
+body {
+    background-image: url("pr-4.2.jpg");
+    object-fit: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; }
+    
+    h1 {
+    color: white; 
+    font-family: verdana;
+    font-size: 200%; 
+    }
+    h2{
+        color: whitesmoke;
+    }
+    p{
+    color: mediumaquamarine;
+    font-family: times new roman;
+    font-size: 100%;
+    
+    border: 3px dashed wheat;
+    background-color: ;
+    padding: 5px;
+    margin: 10px;}
+    
+    div {
+    color: #FFC300;
+    width: 450px;
+    font-size:100%;
+    border: 7px solid honeydew;
+    border-radius: 20px;
+    padding: 7px;
+    margin: 10px;
+    opacity: 4;
+    }
